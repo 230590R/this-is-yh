@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="homeworkfolder/script.js" defer></script>
+  <link rel="stylesheet" href="homeworkfolder/style.css">
+  <title>Hello World</title>
+</head>
+
+<body>
+  <!--title parallax-->
+  <section id="title-cover">
+    <img src="homeworkfolder/images/mountain.png" id="title-mountain" alt="mountain">
+    <img src="homeworkfolder/images/penguincutout.png" id="title-ground" alt="penguin">
+    <h1 id="title-h1">yh.</h1>
+  </section>
+  <section id="Information">
+    <h2>Page in progress.</h2>
+    <p>I am still creating my portfolio!</p>
+  </section>
+  <!--subpage #3: penguin customisation-->
+  <section id="game" class="">
+    <h2>Add your own penguin!</h2>
+    <form action="#" onsubmit="return false">
+      <div class="formbox">
+        <!--name-->
+        <label for="pet-name">Name:</label>
+        <input name="pet-name" id="pet-name" type="text" minlength="2" maxlength="8" placeholder="Pesto">
+        <!--species-->
+        <label for="pet-species">Species:</label>
+        <select name="pet-species" id="pet-species">
+          <option value="emperor">Emperor</option>
+          <option value="adelie">Adelie</option>
+          <option value="rockhopper">Rockhopper</option>
+        </select>
+        <!--age-->
+        <label>Age:</label>
+        <button name="pet-age" id="pet-age-selector">Adult</button>
+        <br>
+        <button id="submit">Submit!</button>
+      </div>
+    </form>
+    <br><br>
+  </section>
+
+
+  <!--footer: contains penguins-->
+  <footer>
+    <h2>The penguin enclosure.</h2>
+    <img src="homeworkfolder/images/footerbg.jpg" class="bg" alt="Antarctic Mountains">
+    <div class="penguin-container"></div>
+  </footer>
+
+</body>
+
+</html>
