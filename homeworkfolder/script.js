@@ -187,11 +187,21 @@ document.getElementById("submit").addEventListener('click', function () { footer
 let cover = new Cover();
 window.addEventListener('scroll', function () {cover.ScrollUpdate(window.scrollY);});
 
+// set all iframes to the right aspect ratio
+let iframes = document.getElementsByClassName("standardaspect");
+
+
+
 let prevTimestamp = 0;
 function AppLoop(timestamp) {
   let dt = (timestamp - prevTimestamp) / 1000;
   prevTimestamp = timestamp; 
   footer.Update(dt);
+  for (let i = 0; i < iframes.length; i++) {
+    let h = iframes[i].clientWidth * 9 / 16;
+    h *= 1.045;
+    iframes[i].style.height = h + "px";
+  }
   requestAnimationFrame(AppLoop);
 }
 
